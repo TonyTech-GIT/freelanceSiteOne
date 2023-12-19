@@ -1,0 +1,42 @@
+.about_hero {
+  padding: 1rem;
+}
+
+.about_hero h1 {
+  font-size: 6rem;
+  font-weight: 400;
+}
+
+.about_desc {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+
+  margin-block: 2rem;
+
+  padding: 1rem;
+}
+
+.about_desc .texts {
+  display: flex;
+
+  flex: 3;
+
+  /* width: 30%; */
+}
+.about_desc .texts .text-1 {
+  /* margin-right: 3rem; */
+
+  width: 25%;
+}
+.about_desc .texts .text-2 {
+  width: 25%;
+
+  margin-left: 6rem;
+}
+
+.about_desc img {
+  width: 25%;
+
+  margin-right: 4rem;
+}

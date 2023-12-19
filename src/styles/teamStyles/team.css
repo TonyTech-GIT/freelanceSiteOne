@@ -1,0 +1,102 @@
+.team h1 {
+  padding: 1rem;
+
+  font-size: 6rem;
+  font-weight: 400;
+}
+
+.team_desc {
+  display: flex;
+}
+.team_desc .team_list {
+  flex: 5;
+  padding: 1rem;
+}
+.team_desc .team_list span {
+  display: block;
+
+  font-size: 4rem;
+
+  color: #9b9494;
+
+  cursor: pointer;
+}
+.team_desc .team_list span:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+.team_desc .team_list span:hover {
+  color: #000;
+}
+
+.team_desc .team_list span:nth-child(1) {
+  margin-left: 6rem;
+}
+.team_desc .team_list span:nth-child(3) {
+  margin-left: 10rem;
+}
+.team_desc .team_list span:nth-child(4) {
+  margin-left: 1.3rem;
+}
+.team_desc .team_list span:nth-child(5) {
+  margin-left: 7rem;
+}
+
+.team_profile-wrapper {
+  flex: 3;
+}
+
+.team_individual {
+  display: flex;
+
+  position: relative;
+
+  bottom: 2rem;
+  right: 8rem;
+}
+.team_individual img {
+  width: 30%;
+}
+
+.team_individual .team_individual-details {
+  padding: 1rem;
+}
+.team_individual .team_individual-details .role {
+  font-size: 12px;
+
+  margin-block: 0.5rem;
+
+  color: #9b9494;
+}
+.team_individual .team_individual-details .desc {
+  width: 50%;
+}
+
+/* FOOTER... */
+.team_footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 1rem;
+}
+.team_footer .back-arrow p,
+.team_footer .front-arrow p {
+  display: inline-block;
+
+  position: relative;
+  bottom: 1.3rem;
+
+  padding-inline: 1rem;
+
+  font-size: 12px;
+}
+.team_footer .front-arrow p {
+  bottom: 1.3rem;
+}
+
+.team_footer .back-arrow img,
+.team_footer .front-arrow img {
+  cursor: pointer;
+
+  width: 30%;
+}

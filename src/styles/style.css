@@ -1,0 +1,31 @@
+/* HOME */
+@import url("./homeStyles/header.css");
+@import url("./homeStyles/hero.css");
+@import url("./homeStyles/about.css");
+
+/* ABOUT */
+@import url("./aboutStyles/hero.css");
+@import url("./aboutStyles/footer.css");
+
+/* SERVICES */
+@import url("./servicesStyles/services.css");
+
+/* TEAM */
+@import url("./teamStyles/team.css");
+
+/* CONTACT */
+@import url("./contactStyles/contact.css");
+
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;700&family=Lato:wght@300&family=Merriweather&family=Montserrat:wght@100;400;900&family=Oswald&family=Overpass:wght@300;400;700&family=Poppins:wght@100;200;300;400&family=Prompt:ital,wght@0,200;0,300;1,700&family=Public+Sans:wght@300;400;700&family=Roboto:wght@300;400;700&family=Sacramento&family=Sigmar+One&family=Ubuntu:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "merriweather", sans-serif;
+}
+
+body {
+  background-color: #f7f6f6;
+}

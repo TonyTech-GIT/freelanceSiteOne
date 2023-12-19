@@ -1,0 +1,57 @@
+.home_hero {
+  padding: 1rem;
+
+  display: flex;
+  /* align-items: center; */
+
+  max-width: 100%;
+
+  position: relative;
+}
+
+.home_hero-text {
+  flex: 4;
+}
+
+.home_hero-text span {
+  display: block;
+  width: 100%;
+  font-size: 6rem;
+}
+
+.home_hero-text .spanText-2 {
+  margin-left: 11rem;
+
+  max-width: fit-content;
+}
+
+.home_hero-blob {
+  flex: 2;
+  position: relative;
+
+  height: 400px;
+
+  bottom: 2em;
+  right: 24em;
+
+  z-index: -2;
+}
+.home_hero-blob svg {
+  width: 100%;
+
+  filter: blur(20px);
+
+  /* position: relative; */
+  /* bottom: 4em; */
+}
+.home_hero-blob .blobOne {
+  position: relative;
+  left: 5em;
+}
+.home_hero-blob .blobTwo {
+  position: relative;
+  top: -25em;
+  left: 1em;
+
+  z-index: -20;
+}

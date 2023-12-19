@@ -1,0 +1,74 @@
+.services h1 {
+  padding: 1rem;
+
+  font-size: 6rem;
+  font-weight: 400;
+}
+
+.services_wrapper {
+  display: flex;
+
+  /* padding: 1rem; */
+
+  overflow-x: auto;
+  max-width: 100%;
+}
+
+.service-card {
+  /* border: 1px solid red; */
+  background-color: #fff;
+  height: 320px;
+  width: 500px;
+}
+.service-card:not(:last-child) {
+  margin-right: 20px;
+}
+.service-card img {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+}
+
+.card-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 0.5rem;
+  padding-inline: 1rem;
+}
+.card-details p {
+  font-size: 12px;
+}
+.card-details img {
+  width: 10%;
+}
+
+.services_footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 1rem;
+}
+.services_footer .back-arrow p,
+.services_footer .front-arrow p {
+  display: inline-block;
+
+  position: relative;
+  bottom: 1.3rem;
+
+  padding-inline: 1rem;
+
+  font-size: 12px;
+}
+.services_footer .front-arrow p {
+  bottom: 1.3rem;
+}
+
+.services_footer .back-arrow img,
+.services_footer .front-arrow img {
+  cursor: pointer;
+
+  width: 30%;
+}
