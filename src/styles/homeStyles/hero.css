@@ -35,7 +35,7 @@
 
   height: 400px;
 
-  bottom: 2em;
+  bottom: 0em;
   right: 20em;
 
   z-index: 2;
@@ -43,7 +43,7 @@
 .home_hero-blob svg {
   width: 100%;
 
-  filter: blur(20px);
+  filter: blur(50px);
 
   /* position: relative; */
   /* bottom: 4em; */
@@ -139,16 +139,14 @@
     align-items: center; /* Center items vertically on smaller screens */
   }
 
-  .home_hero-text {
-    flex: 1; /* Adjust the text section's flex value */
-    text-align: center; /* Center text on smaller screens */
-    margin-bottom: 1rem; /* Add space between text and blob */
-  }
-
   .home_hero-text span {
     font-size: 3rem; /* Adjust font size for smaller screens */
     margin-left: 0; /* Reset margin for spanText-2 */
     max-width: 100%; /* Ensure text spans the full width */
+  }
+
+  .home_hero-text .spanText-2 {
+    margin-left: 3rem;
   }
 
   .home_hero-blob,

@@ -34,10 +34,8 @@ body {
   background-color: #000;
 }
 .home_wrapper {
-  background-color: #eee;
+  background-color: #bdbaba;
   margin-inline: 8rem;
-
-  /* padding: 2rem; */
 }
 
 /* Mobile devices */
