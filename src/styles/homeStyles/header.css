@@ -1,6 +1,6 @@
 .home_header {
   display: flex;
-  justify-content: space-between;
+  justify-content: end;
   align-items: center;
 
   padding: 1rem;
@@ -41,4 +41,35 @@
 }
 .home_header-navLinks .btn-container div:not(:last-child) {
   margin-bottom: 3px;
+}
+
+/* Mobile devices */
+@media only screen and (max-width: 767px) {
+  .home_header {
+    flex-direction: column; /* Adjust layout for smaller screens */
+    padding: 0.5rem; /* Decrease padding for smaller screens */
+  }
+
+  .home_header-logo {
+    margin-bottom: 1rem; /* Add spacing between logo and navigation */
+  }
+
+  .home_header-navLinks {
+    display: flex; /* Display navigation links for mobile */
+    flex-direction: row; /* Stack links vertically */
+    align-items: center; /* Adjust alignment */
+    margin-top: 1rem; /* Add margin at the top */
+
+    gap: 1rem;
+  }
+
+  .home_header-navLinks .en,
+  .home_header-navLinks .contact-text {
+    margin-right: 0; /* Remove right margin for better spacing */
+    margin-bottom: 0.5rem; /* Add spacing between links */
+  }
+
+  .home_header-navLinks .btn-container div {
+    width: 20px; /* Adjust button width for smaller screens */
+  }
 }

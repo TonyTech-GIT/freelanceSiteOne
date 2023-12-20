@@ -66,6 +66,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  /* background: linear-gradient(to right, #fa4d56, #f1c21b);
+
+  padding: 3rem; */
 }
 
 .home_about-subtitle .text-right {

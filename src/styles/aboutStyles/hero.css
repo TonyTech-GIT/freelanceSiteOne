@@ -1,5 +1,5 @@
 .about_hero {
-  padding: 1rem;
+  padding: 2rem;
 }
 
 .about_hero h1 {
@@ -14,7 +14,7 @@
 
   margin-block: 2rem;
 
-  padding: 1rem;
+  padding-inline: 3rem;
 }
 
 .about_desc .texts {

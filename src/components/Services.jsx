@@ -26,14 +26,14 @@ const Services = () => {
             cardName: 'BRANDING',
             image: serviceImage
         },
-        {
-            cardName: 'AI',
-            image: serviceImage
-        },
-        {
-            cardName: 'IT CONSULTANCY',
-            image: serviceImage
-        },
+        // {
+        //     cardName: 'AI',
+        //     image: serviceImage
+        // },
+        // {
+        //     cardName: 'IT CONSULTANCY',
+        //     image: serviceImage
+        // },
 
 
 
@@ -42,10 +42,10 @@ const Services = () => {
     return (
         <section className="services">
             <div className="home_header">
-                <div className="home_header-logo">
+                {/* <div className="home_header-logo">
                     <div className="circle"></div>
                     <div className="circle"></div>
-                </div>
+                </div> */}
 
                 <div className="home_header-navLinks">
                     <span className="en">EN</span>
@@ -87,8 +87,8 @@ const Services = () => {
                     <p>WHO WE ARE</p>
                 </div>
                 <div className="front-arrow">
-                    <p>OUR TEAM</p>
-                    <Link to='/team'>
+                    <p>CONTACT</p>
+                    <Link to='/contact'>
                         <img src={rightArrow} alt="right-arrow" />
                     </Link>
 

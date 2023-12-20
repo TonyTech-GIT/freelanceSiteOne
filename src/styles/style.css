@@ -16,16 +16,33 @@
 /* CONTACT */
 @import url("./contactStyles/contact.css");
 
-@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;700&family=Lato:wght@300&family=Merriweather&family=Montserrat:wght@100;400;900&family=Oswald&family=Overpass:wght@300;400;700&family=Poppins:wght@100;200;300;400&family=Prompt:ital,wght@0,200;0,300;1,700&family=Public+Sans:wght@300;400;700&family=Roboto:wght@300;400;700&family=Sacramento&family=Sigmar+One&family=Ubuntu:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;700&family=Chakra+Petch:wght@300;400&family=Lato:wght@300&family=Merriweather&family=Montserrat:wght@100;400;900&family=Oswald&family=Overpass:wght@300;400;700&family=Poppins:wght@100;200;300;400&family=Prompt:ital,wght@0,200;0,300;1,700&family=Public+Sans:wght@300;400;700&family=Roboto:wght@300;400;700&family=Sacramento&family=Sigmar+One&family=Ubuntu:wght@300&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 
-  font-family: "merriweather", sans-serif;
+  font-family: "Chakra Petch", Arial, Helvetica, sans-serif;
 }
 
 body {
-  background-color: #f7f6f6;
+  overflow-x: hidden;
+}
+
+.home {
+  background-color: #000;
+}
+.home_wrapper {
+  background-color: #eee;
+  margin-inline: 8rem;
+
+  /* padding: 2rem; */
+}
+
+/* Mobile devices */
+@media only screen and (max-width: 767px) {
+  .home_wrapper {
+    margin-inline: 1rem; /* Adjust margin for smaller screens */
+  }
 }

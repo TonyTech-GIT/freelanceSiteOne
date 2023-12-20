@@ -16,7 +16,11 @@
 .home_hero-text span {
   display: block;
   width: 100%;
-  font-size: 6rem;
+  font-size: 5rem;
+
+  position: relative;
+
+  z-index: 50;
 }
 
 .home_hero-text .spanText-2 {
@@ -32,9 +36,9 @@
   height: 400px;
 
   bottom: 2em;
-  right: 24em;
+  right: 20em;
 
-  z-index: -2;
+  z-index: 2;
 }
 .home_hero-blob svg {
   width: 100%;
@@ -54,4 +58,102 @@
   left: 1em;
 
   z-index: -20;
+}
+
+/* blob container.... */
+
+.blob-container {
+  flex: 2;
+  position: absolute;
+
+  height: 400px;
+
+  bottom: -12em;
+  left: -10em;
+
+  z-index: 2;
+
+  transform: rotate(-30deg);
+}
+.blob-container svg {
+  width: 50%;
+
+  filter: blur(20px);
+
+  /* position: relative; */
+  /* bottom: 4em; */
+}
+.blob-container .blobOne {
+  position: absolute;
+  left: 5em;
+}
+/* .blob-container .blobTwo {
+  position: relative;
+  top: -25em;
+  left: 1em;
+
+  z-index: -20;
+} */
+
+/* second blob gradient... */
+/* blob container.... */
+
+.blob-containerTwo {
+  flex: 2;
+  position: absolute;
+
+  height: 400px;
+
+  top: 3rem;
+  right: -13rem;
+
+  z-index: 2;
+
+  transform: rotate(30deg);
+}
+.blob-containerTwo svg {
+  width: 50%;
+
+  filter: blur(20px);
+
+  /* position: relative; */
+  /* bottom: 4em; */
+}
+.blob-containerTwo .blobOne {
+  position: absolute;
+  left: 5em;
+}
+/* .blob-container .blobTwo {
+  position: relative;
+  top: -25em;
+  left: 1em;
+
+  z-index: -20;
+} */
+
+/* Mobile devices */
+@media only screen and (max-width: 767px) {
+  .home_hero {
+    padding: 0.5rem; /* Adjust padding for smaller screens */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items vertically on smaller screens */
+  }
+
+  .home_hero-text {
+    flex: 1; /* Adjust the text section's flex value */
+    text-align: center; /* Center text on smaller screens */
+    margin-bottom: 1rem; /* Add space between text and blob */
+  }
+
+  .home_hero-text span {
+    font-size: 3rem; /* Adjust font size for smaller screens */
+    margin-left: 0; /* Reset margin for spanText-2 */
+    max-width: 100%; /* Ensure text spans the full width */
+  }
+
+  .home_hero-blob,
+  .blob-container,
+  .blob-containerTwo {
+    display: none; /* Hide blobs on smaller screens */
+  }
 }

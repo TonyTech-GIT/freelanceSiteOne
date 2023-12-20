@@ -8,10 +8,10 @@ const About = () => {
     return (
         <section className="about">
             <div className="home_header">
-                <div className="home_header-logo">
+                {/* <div className="home_header-logo">
                     <div className="circle"></div>
                     <div className="circle"></div>
-                </div>
+                </div> */}
 
                 <div className="home_header-navLinks">
                     <span className="en">EN</span>
