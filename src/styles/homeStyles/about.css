@@ -105,6 +105,11 @@
     text-align: center; /* Center links on smaller screens */
   }
 
+  .home_about-main .link img {
+    position: relative;
+    bottom: 0.1rem;
+  }
+
   .home_about-subtitle {
     flex-direction: column; /* Stack subtitle items vertically */
     align-items: center; /* Center items horizontally on smaller screens */
