@@ -35,8 +35,10 @@
 
   height: 400px;
 
-  bottom: 0em;
-  right: 20em;
+  width: 200px;
+
+  bottom: 4em;
+  right: 28em;
 
   z-index: 2;
 }

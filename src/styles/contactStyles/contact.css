@@ -178,6 +178,10 @@
   width: 30%;
 }
 
+.contact_footer .back-arrow img {
+  width: 10%;
+}
+
 /* Mobile devices */
 @media only screen and (max-width: 767px) {
   .contact_wrapper {
@@ -215,6 +219,13 @@
     display: block;
 
     position: relative;
-    left: 1rem;
+    right: 2rem;
+  }
+
+  .contact_footer .back-arrow img {
+    width: 12%;
+  }
+  .contact_footer .back-arrow p {
+    bottom: 0.8rem;
   }
 }

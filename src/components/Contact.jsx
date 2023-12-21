@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import leftArrow from '../assets/left-arrow.png'
+import leftArrow from '../assets/white-leftArrow.png'
 // import rightArrow from '../assets/right-arrow.png'
 
 

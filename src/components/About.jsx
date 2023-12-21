@@ -1,6 +1,6 @@
 import aboutImg from '../assets/photo-1572021335469-31706a17aaef.avif'
-import leftArrow from '../assets/left-arrow.png'
-import rightArrow from '../assets/right-arrow.png'
+import leftArrow from '../assets/white-leftArrow.png'
+import rightArrow from '../assets/white-rightArrow.png'
 
 import { Link } from 'react-router-dom'
 

@@ -52,6 +52,8 @@
 .card-details p {
   font-size: 12px;
   font-weight: bold;
+
+  color: #000;
 }
 .card-details img {
   width: 10%;
@@ -86,6 +88,15 @@
   width: 30%;
 }
 
+.services_footer .front-arrow img {
+  position: relative;
+
+  width: 20%;
+}
+.services_footer .back-arrow img {
+  width: 8%;
+}
+
 /* Mobile devices */
 @media only screen and (max-width: 767px) {
   .services h1 {
@@ -117,5 +128,12 @@
 
   .card-details img {
     width: 20px; /* Adjust icon size */
+  }
+
+  .services_footer .front-arrow p {
+    bottom: 0.5rem;
+  }
+  .services_footer .back-arrow p {
+    bottom: 0.5rem;
   }
 }

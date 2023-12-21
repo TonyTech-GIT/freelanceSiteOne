@@ -25,5 +25,41 @@
 .about_footer .front-arrow img {
   cursor: pointer;
 
-  width: 30%;
+  width: 20%;
+}
+.about_footer .back-arrow img {
+  width: 10%;
+
+  position: relative;
+
+  bottom: -0.5rem;
+}
+
+/* Media Queries for Mobile Responsiveness */
+
+@media screen and (max-width: 768px) {
+  .about_footer {
+    flex-direction: row;
+    /* align-items: flex-start; */
+  }
+
+  .about_footer .back-arrow p,
+  .about_footer .front-arrow p {
+    bottom: 0.5rem; /* Adjust as needed */
+    font-size: 10px; /* Adjust as needed */
+  }
+
+  .about_footer .front-arrow p {
+    bottom: 0.5rem; /* Adjust as needed */
+  }
+
+  .about_footer .back-arrow img,
+  .about_footer .front-arrow img {
+    width: 20%; /* Adjust as needed */
+  }
+
+  .about_footer .back-arrow img {
+    width: 10%; /* Adjust as needed */
+    bottom: -0.1rem; /* Adjust as needed */
+  }
 }

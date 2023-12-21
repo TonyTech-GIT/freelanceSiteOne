@@ -28,16 +28,19 @@
 
 body {
   overflow-x: hidden;
+
+  background-color: #222125;
 }
 
-.home {
-  background-color: #000;
-}
-.home_wrapper {
+.home,
+.about,
+.services,
+.contact {
   background-color: #222125;
-  margin-inline: 8rem;
 
   color: #eee;
+
+  padding-inline: 3rem;
 }
 
 /* Mobile devices */
