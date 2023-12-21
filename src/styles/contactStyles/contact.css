@@ -167,10 +167,54 @@
 .contact_footer .back-arrow p {
   bottom: 1.5rem;
 }
+.contact_footer .front-arrow p {
+  bottom: 0.2rem;
+}
 
 .contact_footer .back-arrow img,
 .contact_footer .front-arrow img {
   cursor: pointer;
 
   width: 30%;
+}
+
+/* Mobile devices */
+@media only screen and (max-width: 767px) {
+  .contact_wrapper {
+    margin: 0.5rem;
+    padding: 1rem;
+  }
+
+  .contact_wrapper h1 {
+    font-size: 4rem;
+
+    text-align: center;
+  }
+
+  .contact_wrapper-body {
+    flex-direction: column;
+  }
+
+  .contact_wrapper-form form .field {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+
+  .contact_wrapper-location {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  .contact_wrapper-location .email-box .email {
+    margin-top: 1rem;
+  }
+
+  .atom-container .atom-img {
+    display: block;
+
+    position: relative;
+    left: 1rem;
+  }
 }

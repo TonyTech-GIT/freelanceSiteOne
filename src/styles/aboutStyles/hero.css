@@ -40,3 +40,37 @@
 
   margin-right: 4rem;
 }
+
+/* Mobile devices */
+@media only screen and (max-width: 767px) {
+  .about_hero {
+    padding: 1rem; /* Adjust padding for smaller screens */
+  }
+
+  .about_hero h1 {
+    font-size: 4rem; /* Decrease font size for smaller screens */
+  }
+
+  .about_desc {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    padding: 1rem; /* Adjust padding for smaller screens */
+  }
+
+  .about_desc .texts {
+    flex-direction: column; /* Stack text sections vertically */
+    align-items: center; /* Center text sections horizontally */
+    margin-top: 1rem; /* Add space between text sections */
+  }
+
+  .about_desc .texts .text-1,
+  .about_desc .texts .text-2 {
+    width: 100%; /* Make text sections span full width */
+    margin: 1rem 0; /* Adjust margin for spacing */
+  }
+
+  .about_desc img {
+    width: 100%; /* Make image span full width */
+    margin: 1rem 0; /* Adjust margin for spacing */
+  }
+}
