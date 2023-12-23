@@ -41,7 +41,7 @@ const Home = () => {
                     <span className="spanText-3">PRODUCTS</span>
                 </div>
 
-                {/* <div className="home_hero-blob">
+                <div className="home_hero-blob" data-aos="fade-in">
                     <svg className="blobOne" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
                         <path fill="#388d3f" d="M51.1,-11.5C60.3,11.4,57.5,43.4,39.6,57C21.7,70.6,-11.4,65.9,-33.9,49C-56.4,32.1,-68.3,3,-60.9,-17.6C-53.5,-38.2,-26.8,-50.4,-2.9,-49.5C21,-48.5,42,-34.5,51.1,-11.5Z" transform="translate(100 100)" />
                     </svg>
@@ -49,7 +49,7 @@ const Home = () => {
                     <svg className="blobTwo" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
                         <path fill="#431658" d="M51.1,-11.5C60.3,11.4,57.5,43.4,39.6,57C21.7,70.6,-11.4,65.9,-33.9,49C-56.4,32.1,-68.3,3,-60.9,-17.6C-53.5,-38.2,-26.8,-50.4,-2.9,-49.5C21,-48.5,42,-34.5,51.1,-11.5Z" transform="translate(100 100)" />
                     </svg>
-                </div> */}
+                </div>
 
                 {/* seperate blobs.. */}
                 {/* <div className="blob-container">

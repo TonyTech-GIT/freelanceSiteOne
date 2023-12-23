@@ -11,6 +11,10 @@
 
 .home_hero-text {
   flex: 4;
+
+  position: relative;
+
+  z-index: 9999;
 }
 
 .home_hero-text span {
@@ -19,8 +23,6 @@
   font-size: 5rem;
 
   position: relative;
-
-  z-index: 50;
 }
 
 .home_hero-text .spanText-2 {
