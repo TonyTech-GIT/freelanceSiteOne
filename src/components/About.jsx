@@ -4,10 +4,17 @@ import rightArrow from '../assets/white-rightArrow.png'
 
 import { Link } from 'react-router-dom'
 
+import { motion } from 'framer-motion'
+
 const About = () => {
     return (
-        <section className="about">
-            <div className="home_header">
+        <motion.section
+            className="about"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1, transition: { duration: 0.05 } }}
+            exit={{ opacity: 0 }}
+        >
+            <div className="home_header" data-aos="fade-right">
                 {/* <div className="home_header-logo">
                     <div className="circle"></div>
                     <div className="circle"></div>
@@ -29,12 +36,12 @@ const About = () => {
 
             </div>
 
-            <div className="about_hero">
+            <div className="about_hero" data-aos="fade-right">
                 <h1>WHO WE ARE</h1>
             </div>
 
             <div className="about_desc">
-                <div className="texts">
+                <div className="texts" data-aos="fade-right">
                     <p className="text-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis vitae amet voluptate dolores eaque eos sit. Odio quisquam exercitationem doloremque debitis, dolore deleniti ea praesentium, quo eligendi nisi provident molestiae?
                     </p>
                     <p className="text-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae repellendus unde tenetur, placeat laborum, obcaecati eligendi, ducimus dicta non dolores inventore itaque quia? Accusamus similique odit, voluptatem officiis commodi quis!
@@ -42,7 +49,7 @@ const About = () => {
                 </div>
 
 
-                <img src={aboutImg} alt="about-img" />
+                <img src={aboutImg} alt="about-img" data-aos="fade-up" />
 
             </div>
 
@@ -66,7 +73,7 @@ const About = () => {
             </div>
 
 
-        </section>
+        </motion.section>
     )
 }
 

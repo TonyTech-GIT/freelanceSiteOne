@@ -1,6 +1,8 @@
 import Card from "./Card"
 
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+
 import leftArrow from '../assets/white-leftArrow.png'
 import rightArrow from '../assets/white-rightArrow.png'
 
@@ -40,8 +42,13 @@ const Services = () => {
         // Add more service data as needed
     ];
     return (
-        <section className="services">
-            <div className="home_header">
+        <motion.section
+            className="services"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1, transition: { duration: 0.05 } }}
+            exit={{ opacity: 0 }}
+        >
+            <div className="home_header" data-aos="fade-right">
                 {/* <div className="home_header-logo">
                     <div className="circle"></div>
                     <div className="circle"></div>
@@ -62,9 +69,9 @@ const Services = () => {
                 </div>
 
             </div>
-            <h1>WHAT WE DO</h1>
+            <h1 data-aos="fade-right">WHAT WE DO</h1>
 
-            <div className="services_wrapper">
+            <div className="services_wrapper" data-aos="fade-up">
                 {servicesData.map((service, index) => (
                     <Card
                         key={index}
@@ -77,7 +84,7 @@ const Services = () => {
             </div>
 
             <div className="services_footer">
-                <div className="back-arrow">
+                <div className="back-arrow" >
 
                     <Link to='/about'>
                         <img src={leftArrow} alt="left-arrow" />
@@ -94,7 +101,7 @@ const Services = () => {
 
                 </div>
             </div>
-        </section>
+        </motion.section>
     )
 }
 

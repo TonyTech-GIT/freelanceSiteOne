@@ -1,12 +1,19 @@
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+
 import leftArrow from '../assets/white-leftArrow.png'
 // import rightArrow from '../assets/right-arrow.png'
 
 
 const Contact = () => {
     return (
-        <section className="contact">
-            <div className="home_header">
+        <motion.section
+            className="contact"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1, transition: { duration: 0.05 } }}
+            exit={{ opacity: 0 }}
+        >
+            <div className="home_header" data-aos="fade-right">
                 {/* <div className="home_header-logo">
                     <div className="circle"></div>
                     <div className="circle"></div>
@@ -28,9 +35,9 @@ const Contact = () => {
 
             </div>
             <div className="contact_wrapper">
-                <h1>CONTACT US</h1>
+                <h1 data-aos="fade-right">CONTACT US</h1>
                 <div className="contact_wrapper-body">
-                    <div className="contact_wrapper-form">
+                    <div className="contact_wrapper-form" data-aos="fade-right">
                         <h3>Want to discuss your project?</h3>
                         <form >
                             <input className="field" type="text" placeholder="name" />
@@ -45,7 +52,7 @@ const Contact = () => {
                         </form>
                     </div>
 
-                    <div className="contact_wrapper-location">
+                    <div className="contact_wrapper-location" data-aos="fade-left">
                         <div className="location-box">
                             <h3 className="location">LOCATION</h3>
 
@@ -70,7 +77,7 @@ const Contact = () => {
 
 
                 </div>
-                <div className="atom-container">
+                <div className="atom-container" data-aos="fade-right">
                     <div className="atom-img">
                         <div className="atom-1"></div>
                         <div className="atom-2"></div>
@@ -101,7 +108,7 @@ const Contact = () => {
                 </div>
             </div>
 
-        </section>
+        </motion.section>
     )
 }
 

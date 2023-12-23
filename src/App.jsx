@@ -1,27 +1,38 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./components/Home"
-import About from "./components/About";
-import Services from './components/Services'
-// import Team from './components/Team'
-import Contact from './components/Contact'
+import { BrowserRouter } from "react-router-dom";
+import { useEffect } from "react";
+
+import AnimatedRoutes from "./components/AnimatedRoutes";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const App = () => {
 
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      offset: 100,
+      // Other configuration options
+    });
+  }, []);
+
+
   return (
     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/services" element={<Services />} />
-        {/* <Route path="/team" element={<Team />} /> */}
-        <Route path="/contact" element={<Contact />} />
 
 
-        {/* Also add 404 page... */}
-      </Routes>
+      <AnimatedRoutes />
+
+
     </BrowserRouter>
+
+
+
+
 
   )
 }
+
+
+
 
 export default App
