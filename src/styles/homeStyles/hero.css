@@ -66,7 +66,7 @@
 
 /* blob container.... */
 
-.blob-container {
+/* .blob-container {
   flex: 2;
   position: absolute;
 
@@ -84,13 +84,12 @@
 
   filter: blur(20px);
 
-  /* position: relative; */
-  /* bottom: 4em; */
+ 
 }
 .blob-container .blobOne {
   position: absolute;
   left: 5em;
-}
+} */
 /* .blob-container .blobTwo {
   position: relative;
   top: -25em;
@@ -102,7 +101,7 @@
 /* second blob gradient... */
 /* blob container.... */
 
-.blob-containerTwo {
+/* .blob-containerTwo {
   flex: 2;
   position: absolute;
 
@@ -120,19 +119,11 @@
 
   filter: blur(20px);
 
-  /* position: relative; */
-  /* bottom: 4em; */
+  
 }
 .blob-containerTwo .blobOne {
   position: absolute;
   left: 5em;
-}
-/* .blob-container .blobTwo {
-  position: relative;
-  top: -25em;
-  left: 1em;
-
-  z-index: -20;
 } */
 
 /* Mobile devices */
@@ -143,6 +134,9 @@
     align-items: center; /* Center items vertically on smaller screens */
   }
 
+  .home_hero-text {
+    margin-top: 8rem;
+  }
   .home_hero-text span {
     font-size: 3rem; /* Adjust font size for smaller screens */
     margin-left: 0; /* Reset margin for spanText-2 */
@@ -154,8 +148,22 @@
   }
 
   .home_hero-blob,
-  .blob-container,
-  .blob-containerTwo {
-    display: none; /* Hide blobs on smaller screens */
+  .blob-container {
+    display: block;
+
+    position: relative;
+
+    left: -3rem;
+    top: 5rem;
+
+    /* height: 50px; */
+    width: 150px;
   }
+
+  .home_hero-blob .blobOne {
+    position: relative;
+
+    bottom: 15rem;
+  }
+  /* Hide blobs on smaller screens */
 }

@@ -91,7 +91,7 @@
     text-align: center; /* Center atom images and text on smaller screens */
 
     position: relative;
-    top: 3rem;
+    bottom: 5rem;
     right: 2rem;
   }
 
