@@ -41,6 +41,91 @@
   margin-right: 4rem;
 }
 
+/* Higher screen resolution styles */
+@media only screen and (min-width: 1200px) {
+  .about_hero {
+    padding: 3rem; /* Adjust padding for higher resolutions */
+  }
+
+  .about_hero h1 {
+    font-size: 8rem; /* Increase font size for heading */
+    font-weight: 500; /* Adjust font weight if needed */
+  }
+
+  .about_desc {
+    margin-block: 3rem; /* Increase margin */
+    padding-inline: 6rem; /* Adjust padding for description section */
+  }
+
+  .about_desc .texts {
+    flex: 1; /* Adjust flex ratio */
+  }
+
+  .about_desc .texts .text-1,
+  .about_desc .texts .text-2 {
+    width: 30%; /* Adjust width for text sections */
+    margin: 0; /* Reset margin */
+  }
+
+  .about_desc .texts .text-2 {
+    margin-left: 8rem; /* Adjust margin for the second text section */
+  }
+
+  .about_desc img {
+    width: 30%; /* Adjust width for the image */
+
+    position: relative;
+    bottom: 8rem;
+    right: 8rem;
+  }
+
+  /* Additional adjustments for larger screens as needed */
+}
+
+/* Laptop screen sizes */
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+  .about_hero {
+    padding: 2.5rem; /* Adjust padding for laptop screens */
+  }
+
+  .about_hero h1 {
+    font-size: 6.5rem; /* Modify font size for heading */
+  }
+
+  .about_desc {
+    margin-top: 1rem; /* Adjust margin */
+    padding-inline: 4rem; /* Adjust padding for description section */
+
+    margin-bottom: 8rem;
+  }
+
+  .about_desc .texts {
+    flex: 2; /* Adjust flex ratio */
+  }
+
+  .about_desc .texts .text-1,
+  .about_desc .texts .text-2 {
+    width: 28%; /* Adjust width for text sections */
+    margin: 0; /* Reset margin */
+
+    /* text-align: center; */
+  }
+
+  .about_desc .texts .text-2 {
+    margin-left: 7rem; /* Adjust margin for the second text section */
+  }
+
+  .about_desc img {
+    width: 28%; /* Adjust width for the image */
+    margin: 0 4rem 0 0; /* Adjust margin for the image */
+
+    position: relative;
+
+    bottom: 0.8rem;
+    right: 3rem;
+  }
+}
+
 /* Mobile devices */
 @media only screen and (max-width: 767px) {
   .about_hero {
@@ -71,6 +156,45 @@
 
   .about_desc img {
     width: 100%; /* Make image span full width */
-    margin: 1rem 0; /* Adjust margin for spacing */
+    margin: 1rem 0 3rem 0; /* Adjust margin for spacing */
+  }
+}
+
+/* Mobile devices with 320px width */
+@media only screen and (max-width: 320px) {
+  .about_hero {
+    padding: 0.5rem; /* Adjust padding for smaller screens */
+  }
+
+  .about_hero h1 {
+    font-size: 3.5rem; /* Decrease font size for smaller screens */
+
+    text-align: center;
+  }
+
+  .about_desc {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    padding: 0.5rem; /* Adjust padding for smaller screens */
+    margin-bottom: 5rem; /* Add space at the bottom */
+  }
+
+  .about_desc .texts {
+    flex-direction: column; /* Stack text sections vertically */
+    align-items: center; /* Center text sections horizontally */
+    margin-top: 1rem; /* Add space between text sections */
+
+    text-align: center;
+  }
+
+  .about_desc .texts .text-1,
+  .about_desc .texts .text-2 {
+    width: 100%; /* Make text sections span full width */
+    margin: 0.5rem 0; /* Adjust margin for spacing */
+  }
+
+  .about_desc img {
+    width: 100%; /* Make image span full width */
+    margin: 0.5rem 0 2rem 0; /* Adjust margin for spacing */
   }
 }

@@ -65,7 +65,7 @@
   display: flex;
   flex: 2;
 
-  justify-content: space-between;
+  justify-content: space-around;
   color: #eee;
 }
 
@@ -149,7 +149,7 @@
   justify-content: space-between;
   align-items: center;
 
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
 }
 .contact_footer .back-arrow p,
 .contact_footer .front-arrow p {
@@ -179,7 +179,51 @@
 }
 
 .contact_footer .back-arrow img {
-  width: 10%;
+  width: 20%;
+
+  position: relative;
+
+  transform: rotate(-180deg);
+}
+
+/* Larger screen resolutions */
+@media only screen and (min-width: 1200px) {
+  .contact_wrapper {
+    margin: 2rem;
+    padding: 3rem;
+  }
+
+  .contact_wrapper h1 {
+    font-size: 8rem;
+  }
+
+  .contact_wrapper-form form .field {
+    width: 40%;
+  }
+
+  .contact_wrapper-location {
+    margin-top: 4rem;
+  }
+}
+
+/* Laptop screen sizes */
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+  .contact_wrapper {
+    margin: 1.5rem;
+    padding: 2.5rem;
+  }
+
+  .contact_wrapper h1 {
+    font-size: 7rem;
+  }
+
+  .contact_wrapper-form form .field {
+    width: 35%;
+  }
+
+  .contact_wrapper-location {
+    margin-top: 3.5rem;
+  }
 }
 
 /* Mobile devices */
@@ -223,9 +267,67 @@
   }
 
   .contact_footer .back-arrow img {
-    width: 12%;
+    width: 20%;
   }
   .contact_footer .back-arrow p {
-    bottom: 0.8rem;
+    bottom: 1rem;
+  }
+}
+
+/* Mobile devices with 320px width */
+@media only screen and (max-width: 320px) {
+  .contact_wrapper {
+    margin: 0.3rem;
+    padding: 0.5rem;
+  }
+
+  .contact_wrapper h1 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .contact_wrapper-body {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact_wrapper-form form .field {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .contact_wrapper-location {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 1.5rem;
+  }
+
+  .contact_wrapper-location .email-box .email {
+    margin-top: 0.5rem;
+  }
+
+  .atom-container .atom-img {
+    display: block;
+    position: relative;
+    right: 7rem;
+  }
+
+  .contact_footer {
+    margin-top: 0.5rem;
+  }
+
+  .contact_footer .back-arrow img {
+    width: 22%;
+  }
+  .contact_footer .back-arrow p {
+    bottom: 0.5rem;
+
+    font-size: 9px;
+  }
+  .contact_footer .front-arrow p {
+    bottom: 0.1rem;
+
+    font-size: 9px;
   }
 }

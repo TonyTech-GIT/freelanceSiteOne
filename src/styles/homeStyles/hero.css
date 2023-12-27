@@ -64,67 +64,92 @@
   z-index: -20;
 }
 
-/* blob container.... */
+/* Higher screen resolution styles */
+@media only screen and (min-width: 1200px) {
+  .home_hero {
+    padding: 2rem; /* Adjust padding for higher resolutions */
+  }
 
-/* .blob-container {
-  flex: 2;
-  position: absolute;
+  .home_hero-text {
+    flex: 3; /* Adjust text flex ratio */
+  }
+  .home_hero-text span {
+    font-size: 12rem;
+  }
 
-  height: 400px;
+  .home_hero-text .spanText-2 {
+    margin-left: 16rem;
+  }
 
-  bottom: -12em;
-  left: -10em;
+  .home_hero-blob {
+    height: 500px; /* Increase blob height */
+    width: 300px; /* Increase blob width */
+    bottom: 45em; /* Adjust position */
+    right: 32em; /* Adjust position */
+  }
 
-  z-index: 2;
+  .home_hero-blob svg {
+    filter: blur(50px); /* Adjust blur for the blob */
+  }
 
-  transform: rotate(-30deg);
+  /* If you want to display the blob container on higher resolutions */
+  /* .blob-container {
+    display: block;
+    height: 500px;
+    width: 300px;
+    bottom: 6em;
+    left: -12em;
+    transform: rotate(-30deg);
+  } */
+
+  .home_hero-blob .blobOne {
+    position: relative;
+
+    bottom: -35rem;
+  }
+
+  /* Adjust other styles as needed for larger screens */
 }
-.blob-container svg {
-  width: 50%;
 
-  filter: blur(20px);
+/* Laptop screen sizes */
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+  .home_hero {
+    padding: 1.5rem; /* Adjust padding for laptop screens */
+  }
 
- 
+  .home_hero-text {
+    /* Additional adjustments for text section */
+    flex: 3.5; /* Adjust text flex ratio */
+
+    margin-left: 2rem;
+  }
+  .home_hero-text span {
+    font-size: 6rem; /* Adjust font size for the span */
+  }
+
+  .home_hero-text .spanText-2 {
+    margin-left: 10rem; /* Adjust margin for the secondary text */
+  }
+
+  .home_hero-blob {
+    /* Additional adjustments for the blob */
+    height: 450px; /* Modify blob height */
+    width: 250px; /* Modify blob width */
+    bottom: 8em; /* Adjust blob position */
+    right: 25em; /* Adjust blob position */
+  }
+
+  .home_hero-blob svg {
+    filter: blur(45px); /* Adjust blur for the blob */
+  }
+
+  .home_hero-blob .blobOne {
+    /* Adjust blob position */
+    bottom: -5rem;
+  }
+
+  /* Adjust other styles as needed for laptop screens */
 }
-.blob-container .blobOne {
-  position: absolute;
-  left: 5em;
-} */
-/* .blob-container .blobTwo {
-  position: relative;
-  top: -25em;
-  left: 1em;
-
-  z-index: -20;
-} */
-
-/* second blob gradient... */
-/* blob container.... */
-
-/* .blob-containerTwo {
-  flex: 2;
-  position: absolute;
-
-  height: 400px;
-
-  top: 3rem;
-  right: -13rem;
-
-  z-index: 2;
-
-  transform: rotate(30deg);
-}
-.blob-containerTwo svg {
-  width: 50%;
-
-  filter: blur(20px);
-
-  
-}
-.blob-containerTwo .blobOne {
-  position: absolute;
-  left: 5em;
-} */
 
 /* Mobile devices */
 @media only screen and (max-width: 767px) {
@@ -166,4 +191,27 @@
     bottom: 15rem;
   }
   /* Hide blobs on smaller screens */
+}
+
+@media only screen and (max-width: 320px) {
+  .home_hero {
+    padding: 0.5rem; /* Adjust padding for smaller screens */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items vertically on smaller screens */
+  }
+
+  .home_hero-text {
+    margin-top: 5rem; /* Adjust margin top for text */
+  }
+
+  .home_hero-text span {
+    font-size: 2.5rem; /* Adjust font size for smaller screens */
+    margin-left: 0; /* Reset margin for spanText-2 */
+    max-width: 100%; /* Ensure text spans the full width */
+    text-align: center; /* Center text */
+  }
+
+  .home_hero-text .spanText-2 {
+    margin-left: 1rem; /* Adjust margin for the secondary text */
+  }
 }

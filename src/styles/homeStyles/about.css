@@ -122,3 +122,49 @@
     margin-top: 1rem; /* Add space above text-right section */
   }
 }
+
+@media only screen and (max-width: 320px) {
+  .home_about {
+    padding: 0.5rem; /* Adjust padding for smaller screens */
+  }
+
+  .home_about-main {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items vertically on smaller screens */
+  }
+
+  .home_about-main .atom-img {
+    text-align: center; /* Center atom images and text on smaller screens */
+    position: relative;
+    bottom: 4rem;
+    right: 2rem;
+  }
+
+  .home_about-main .link {
+    text-align: center; /* Center links on smaller screens */
+
+    position: relative;
+
+    bottom: 4rem;
+  }
+
+  .home_about-main .link img {
+    width: 30%; /* Adjust image width for smaller screens */
+    position: relative;
+    bottom: 0.1rem;
+  }
+
+  .home_about-subtitle {
+    flex-direction: column; /* Stack subtitle items vertically */
+    align-items: center; /* Center items horizontally on smaller screens */
+    padding: 1rem; /* Adjust padding for smaller screens */
+
+    text-align: center;
+  }
+
+  .home_about-subtitle .text-right {
+    width: 100%; /* Make text-right section span full width */
+    text-align: center; /* Center text on smaller screens */
+    margin-top: 1rem; /* Add space above text-right section */
+  }
+}

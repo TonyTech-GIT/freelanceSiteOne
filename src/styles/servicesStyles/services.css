@@ -60,11 +60,18 @@
 }
 
 .services_footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   margin-top: 1rem;
+
+  margin-inline: 5rem;
 }
 .services_footer .back-arrow p,
 .services_footer .front-arrow p {
@@ -94,7 +101,83 @@
   width: 20%;
 }
 .services_footer .back-arrow img {
-  width: 8%;
+  width: 20%;
+
+  transform: rotate(-180deg);
+}
+
+/* Larger screen resolutions */
+@media only screen and (min-width: 1200px) {
+  .services h1 {
+    font-size: 8rem; /* Increase font size for larger screens */
+    padding: 2rem; /* Adjust padding for larger screens */
+  }
+
+  .services_wrapper {
+    overflow-x: auto; /* Hide horizontal scrolling on larger screens */
+    scroll-snap-type: none; /* Disable mandatory snapping */
+    -webkit-overflow-scrolling: auto; /* Disable smooth scrolling on iOS */
+
+    margin-bottom: 2rem;
+  }
+
+  .service-card {
+    width: 500px; /* Adjust card width for larger screens */
+    margin-right: 40px; /* Increase margin between cards */
+  }
+
+  .service-card:not(:last-child) {
+    margin-right: 40px; /* Adjust margin between cards */
+  }
+
+  .card-details img {
+    width: 30px; /* Adjust icon size for larger screens */
+  }
+}
+
+/* Laptop screen sizes */
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+  .services h1 {
+    font-size: 7rem; /* Adjust font size for laptop screens */
+    padding: 1.5rem; /* Adjust padding for laptop screens */
+  }
+
+  .services_wrapper {
+    overflow-x: auto; /* Hide horizontal scrolling on larger screens */
+    scroll-snap-type: none; /* Disable mandatory snapping */
+    -webkit-overflow-scrolling: auto; /* Disable smooth scrolling on iOS */
+
+    margin-bottom: 8rem;
+  }
+
+  .service-card {
+    width: 400px; /* Adjust card width for laptop screens */
+    margin-right: 30px; /* Adjust margin between cards */
+  }
+
+  .service-card:not(:last-child) {
+    margin-right: 30px; /* Adjust margin between cards */
+  }
+
+  .service-card img {
+    height: 80%; /* Adjust image height */
+  }
+
+  .card-details p {
+    font-size: 13px; /* Adjust font size for details on laptop screens */
+    margin-bottom: 0rem; /* Adjust space between details */
+  }
+
+  .card-details img {
+    width: 25px; /* Adjust icon size for laptop screens */
+  }
+
+  .services_footer .front-arrow p {
+    bottom: 1.4rem;
+  }
+  .services_footer .back-arrow p {
+    bottom: 1.5rem;
+  }
 }
 
 /* Mobile devices */
@@ -130,10 +213,68 @@
     width: 20px; /* Adjust icon size */
   }
 
+  .services_footer {
+    margin-inline: 4rem;
+  }
   .services_footer .front-arrow p {
-    bottom: 0.5rem;
+    bottom: 1rem;
   }
   .services_footer .back-arrow p {
-    bottom: 0.5rem;
+    bottom: 1.2rem;
+  }
+}
+
+/* Mobile devices with 320px width */
+@media only screen and (max-width: 320px) {
+  .services h1 {
+    font-size: 3.5rem; /* Decrease font size for smaller screens */
+    padding: 0.5rem; /* Adjust padding for smaller screens */
+    text-align: center; /* Center-align text */
+
+    /* margin-block: 3rem; */
+    margin-top: 3rem;
+  }
+
+  .services_wrapper {
+    overflow-x: auto; /* Enable horizontal scrolling */
+  }
+
+  .service-card {
+    width: 90%; /* Adjust card width for smaller screens */
+    max-width: 280px; /* Set a maximum width */
+    margin-right: 5px; /* Reduce margin between cards */
+  }
+
+  .service-card img {
+    height: 80%; /* Adjust image height */
+  }
+
+  .card-details p {
+    font-size: 9px; /* Decrease font size for smaller screens */
+    margin-bottom: 0.3rem; /* Add space between details */
+  }
+
+  .card-details img {
+    width: 18px; /* Adjust icon size */
+  }
+
+  .services_footer {
+    margin-inline: 1.5rem; /* Adjust margin for smaller screens */
+  }
+
+  .services_footer .front-arrow p {
+    bottom: 0.8rem; /* Adjust position */
+  }
+
+  .services_footer .back-arrow p {
+    bottom: 1rem; /* Adjust position */
+  }
+
+  .services_footer .front-arrow img {
+    bottom: 0.4rem;
+  }
+  .services_footer .back-arrow img {
+    position: relative;
+    bottom: 0.4rem;
   }
 }

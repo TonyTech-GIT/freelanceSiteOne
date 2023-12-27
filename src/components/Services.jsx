@@ -3,8 +3,8 @@ import Card from "./Card"
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
-import leftArrow from '../assets/white-leftArrow.png'
-import rightArrow from '../assets/white-rightArrow.png'
+import leftArrow from '../assets/sharp-edge_arrow-removebg-preview.png'
+import rightArrow from '../assets/sharp-edge_arrow-removebg-preview.png'
 
 import serviceImage from '../assets/photo-1572021335469-31706a17aaef.avif'
 
@@ -57,10 +57,13 @@ const Services = () => {
                 <div className="home_header-navLinks">
                     <span className="en">EN</span>
 
-                    <span className="contact-text">
-                        Contact Us
-                        {/* add logo here */}
-                    </span>
+                    <Link to='/contact'>
+                        <span className="contact-text">
+                            Contact Us
+                            {/* add logo here */}
+                        </span>
+                    </Link>
+
 
                     <div className="btn-container">
                         <div></div>

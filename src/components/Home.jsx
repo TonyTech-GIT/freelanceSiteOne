@@ -1,5 +1,5 @@
 
-import rightArrow from '../assets/white-rightArrow.png'
+import rightArrow from '../assets/sharp-edge_arrow-removebg-preview.png'
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
@@ -21,10 +21,15 @@ const Home = () => {
                 <div className="home_header-navLinks" data-aos="fade-right">
                     <span className="en">EN</span>
 
-                    <span className="contact-text">
-                        Contact Us
-                        {/* add logo here */}
-                    </span>
+                    <Link to='/contact'>
+                        <span className="contact-text">
+                            Contact Us
+
+
+                            {/* add logo here */}
+                        </span>
+                    </Link>
+
 
                     <div className="btn-container">
                         <div></div>

@@ -29,6 +29,10 @@
 }
 .home_header-navLinks .contact-text {
   margin-right: 5rem;
+
+  color: #eee;
+
+  cursor: pointer;
 }
 
 .home_header-navLinks .btn-container {
@@ -71,5 +75,35 @@
 
   .home_header-navLinks .btn-container div {
     width: 20px; /* Adjust button width for smaller screens */
+  }
+}
+
+/* Devices with a width of 320px */
+@media only screen and (max-width: 320px) {
+  .home_header {
+    flex-direction: column;
+    padding: 0.5rem;
+  }
+
+  .home_header-logo {
+    margin-bottom: 1rem;
+  }
+
+  .home_header-navLinks {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1rem;
+    gap: 1rem;
+  }
+
+  .home_header-navLinks .en,
+  .home_header-navLinks .contact-text {
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+  }
+
+  .home_header-navLinks .btn-container div {
+    width: 20px;
   }
 }
