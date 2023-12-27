@@ -6,6 +6,10 @@ import leftArrow from '../assets/sharp-edge_arrow-removebg-preview.png'
 
 
 const Contact = () => {
+
+    const handleFormClick = (e) => {
+        e.preventDefault()
+    }
     return (
         <motion.section
             className="contact"
@@ -52,6 +56,8 @@ const Contact = () => {
                                 <option >Brand Manager</option>
                                 <option >IT Consultant</option>
                             </select>
+
+                            <input className="form-btn" type="submit" onClick={handleFormClick} />
                         </form>
                     </div>
 

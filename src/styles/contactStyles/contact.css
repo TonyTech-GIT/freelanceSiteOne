@@ -60,6 +60,26 @@
   background-color: #131333;
 }
 
+.contact_wrapper-form form .form-btn {
+  background-color: #ddd;
+
+  border: none;
+  border-radius: 5px;
+
+  padding: 0.5rem 1rem;
+
+  cursor: pointer;
+
+  font-weight: bold;
+
+  position: relative;
+  left: 13rem;
+}
+
+.contact_wrapper-form form .form-btn:hover {
+  background-color: #eee;
+}
+
 /* loaction part of contact page... */
 .contact_wrapper-location {
   display: flex;
@@ -201,13 +221,19 @@
     width: 40%;
   }
 
+  .contact_wrapper-form form .form-btn {
+    position: relative;
+
+    left: 33rem;
+  }
+
   .contact_wrapper-location {
     margin-top: 4rem;
   }
 }
 
 /* Laptop screen sizes */
-@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
   .contact_wrapper {
     margin: 1.5rem;
     padding: 2.5rem;
@@ -219,6 +245,10 @@
 
   .contact_wrapper-form form .field {
     width: 35%;
+  }
+
+  .contact_wrapper-form form .form-btn {
+    left: 12rem;
   }
 
   .contact_wrapper-location {
@@ -234,7 +264,7 @@
   }
 
   .contact_wrapper h1 {
-    font-size: 4rem;
+    font-size: 3rem;
 
     text-align: center;
   }
@@ -274,6 +304,18 @@
   }
 }
 
+@media only screen and (min-width: 375px) and (max-width: 425px) {
+  .atom-container .atom-img {
+    display: block;
+    position: relative;
+    right: 5.5rem;
+  }
+
+  .contact_wrapper-form form .form-btn {
+    left: 3.9rem;
+  }
+}
+
 /* Mobile devices with 320px width */
 @media only screen and (max-width: 320px) {
   .contact_wrapper {
@@ -291,9 +333,16 @@
     align-items: center;
   }
 
+  .contact_wrapper-form h3 {
+    text-align: center;
+  }
   .contact_wrapper-form form .field {
     width: 100%;
     margin-bottom: 1rem;
+  }
+
+  .contact_wrapper-form form .form-btn {
+    left: 4rem;
   }
 
   .contact_wrapper-location {
@@ -310,7 +359,7 @@
   .atom-container .atom-img {
     display: block;
     position: relative;
-    right: 7rem;
+    right: 7.5rem;
   }
 
   .contact_footer {
@@ -323,7 +372,7 @@
   .contact_footer .back-arrow p {
     bottom: 0.5rem;
 
-    font-size: 9px;
+    font-size: 8px;
   }
   .contact_footer .front-arrow p {
     bottom: 0.1rem;
