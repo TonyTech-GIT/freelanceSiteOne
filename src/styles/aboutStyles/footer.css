@@ -87,6 +87,30 @@
   }
 }
 
+/* Mobile devices from 375px to 425px */
+@media only screen and (min-width: 375px) and (max-width: 425px) {
+  .about_footer {
+    margin-inline: 2.5em;
+  }
+
+  .about_footer .front-arrow p {
+    position: relative;
+
+    bottom: 0rem;
+  }
+  .about_footer .back-arrow p {
+    position: relative;
+
+    bottom: 0.1rem;
+  }
+
+  .about_footer .back-arrow img {
+    position: relative;
+
+    bottom: -0.7rem;
+  }
+}
+
 /* Media Queries for Mobile Responsiveness - 320px width */
 @media screen and (max-width: 320px) {
   .about_footer {

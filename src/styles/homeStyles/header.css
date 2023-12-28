@@ -33,6 +33,8 @@
   color: #eee;
 
   cursor: pointer;
+
+  text-decoration: none;
 }
 
 .home_header-navLinks .btn-container {

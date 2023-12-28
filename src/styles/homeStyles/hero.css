@@ -20,7 +20,7 @@
 .home_hero-text span {
   display: block;
   width: 100%;
-  font-size: 5rem;
+  font-size: 3rem; /* font size was changed from 5rem to 3rem */
 
   position: relative;
 }
@@ -124,7 +124,7 @@
     margin-left: 2rem;
   }
   .home_hero-text span {
-    font-size: 6rem; /* Adjust font size for the span */
+    font-size: 4rem; /* Adjust font size for the span from 6rem to 4rem */
   }
 
   .home_hero-text .spanText-2 {
@@ -191,6 +191,13 @@
     bottom: 15rem;
   }
   /* Hide blobs on smaller screens */
+}
+
+/* Mobile devices from 375px to 425px */
+@media only screen and (min-width: 375px) and (max-width: 425px) {
+  .home_hero-text span {
+    font-size: 2.2rem;
+  }
 }
 
 @media only screen and (max-width: 320px) {

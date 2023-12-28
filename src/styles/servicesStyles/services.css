@@ -138,7 +138,7 @@
 /* Laptop screen sizes */
 @media only screen and (min-width: 1024px) and (max-width: 1440px) {
   .services h1 {
-    font-size: 7rem; /* Adjust font size for laptop screens */
+    font-size: 4rem; /* Adjust font size for laptop screens from 7rem to 4rem */
     padding: 1.5rem; /* Adjust padding for laptop screens */
   }
 
@@ -224,6 +224,23 @@
   }
 }
 
+/* Mobile devices from 375px to 425px */
+@media only screen and (min-width: 375px) and (max-width: 425px) {
+  .services_footer {
+    margin-inline: 2.5rem;
+  }
+
+  .services_footer .front-arrow p {
+    position: relative;
+
+    bottom: 0.6rem;
+  }
+  .services_footer .back-arrow p {
+    position: relative;
+
+    bottom: 0.7rem;
+  }
+}
 /* Mobile devices with 320px width */
 @media only screen and (max-width: 320px) {
   .services h1 {

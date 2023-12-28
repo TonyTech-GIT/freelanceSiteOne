@@ -89,7 +89,7 @@
   }
 
   .about_hero h1 {
-    font-size: 6.5rem; /* Modify font size for heading */
+    font-size: 4rem; /* Modify font size for heading from 6.5rem to 4rem */
   }
 
   .about_desc {
@@ -134,6 +134,8 @@
 
   .about_hero h1 {
     font-size: 4rem; /* Decrease font size for smaller screens */
+
+    text-align: center;
   }
 
   .about_desc {
@@ -157,6 +159,15 @@
   .about_desc img {
     width: 100%; /* Make image span full width */
     margin: 1rem 0 3rem 0; /* Adjust margin for spacing */
+  }
+}
+
+/* Mobile devices from 375px to 425px */
+@media only screen and (min-width: 375px) and (max-width: 425px) {
+  .about_desc .texts {
+    text-align: center;
+
+    margin-top: 0;
   }
 }
 

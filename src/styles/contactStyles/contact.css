@@ -240,7 +240,7 @@
   }
 
   .contact_wrapper h1 {
-    font-size: 7rem;
+    font-size: 4rem; /*Adjust font-size from 7rem to 4rem */
   }
 
   .contact_wrapper-form form .field {
